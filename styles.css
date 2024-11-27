@@ -70,14 +70,7 @@ p {
     text-wrap: pretty;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
+
 
 /*
   9. Create a root stacking context
@@ -85,4 +78,78 @@ h6 {
 #root,
 #__next {
     isolation: isolate;
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1.5rem;
+    background-color: var(--color-light-grayish-blue);
+    font-family: var(--font-family-manrope);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+.image-container {
+    max-height: 12.5rem;
+    overflow: hidden;
+}
+
+.drawer-image {
+    aspect-ratio: 660/528;
+    object-fit: cover;
+}
+
+.text-container {
+    padding: 2.2rem;
+}
+
+h1 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-very-dark-grayish-blue);
+    font-weight: var(--font-weight-700);
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 0.81rem;
+    padding-bottom: 2rem;
+    color: var(--color-desaturated-dark-blue);
+}
+
+.footer-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.avatar {
+    max-width: 15%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.author-date {
+    font-weight: 700;
+    color: var(--color-very-dark-grayish-blue);
+    font-size: 0.81rem;
+    line-height: 1.7;
+}
+
+span {
+    font-weight: 500;
+    color: var(--color-grayish-blue);
+}
+
+button {
+    align-items: flex-end;
+    border: none;
 }
