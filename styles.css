@@ -174,7 +174,8 @@ button {
     background-color: var(--color-very-dark-grayish-blue);
 }
 
-#btn-close {
+#btn-close,
+#btn-close-2 {
     display: none;
     background-color: var(--color-desaturated-dark-blue);
 }
