@@ -167,7 +167,7 @@ button {
 
 #box {
     display: none;
-    margin-top: -2rem;
+    margin-top: -1.5rem;
     padding: 1.1rem 2.2rem;
     width: 100%;
     align-items: center;
@@ -175,6 +175,7 @@ button {
 }
 
 #btn-close {
+    display: none;
     background-color: var(--color-desaturated-dark-blue);
 }
 
@@ -186,9 +187,10 @@ button {
 
 .pop-up {
     display: none;
-    position: relative;
-    top: 10rem;
-    right: -13.5rem;
+    transition: all 1s;
+    position: absolute;
+    top: 9rem;
+    right: -4rem;
     padding: 1.1rem 1.5rem;
     border-radius: 0.8rem;
     width: 16rem;
@@ -220,6 +222,15 @@ button {
 }
 
 @media screen and (min-width: 48em) {
+    #btn-close {
+        width: auto;
+        margin-left: auto;
+        display: none;
+    }
+
+    main {
+        padding: 6rem 4rem;
+    }
 
     .main-container {
         overflow: initial;
@@ -248,9 +259,6 @@ button {
         max-width: 3rem;
     }
 
-    #share-image {
-        width: 1.2rem;
-    }
 
     .text-container {
         padding: 0 2.75rem 0 2.5rem;
